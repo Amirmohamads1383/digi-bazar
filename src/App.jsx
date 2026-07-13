@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
+import { RouterProvider } from "react-router";
+import routes from "./routes";
 
 export default function App() {
-  return (
-    <h1 className='text-5xl text-red-500 underline'>Hello</h1>
-  )
+  return <RouterProvider router={routes} />;
 }
