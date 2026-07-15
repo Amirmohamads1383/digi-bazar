@@ -25,6 +25,27 @@
         font-feature-settings: "ss02";
     }
 
+    #hero-banner-swiper .swiper-pagination {
+        z-index: 60 !important;
+        position: absolute !important;
+        bottom: 0 !important;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        transition: all 150ms ease-in-out;
+        background-color: var(--color-Primary) !important;
+        width: 50px !important;
+        border-radius: 5px !important;
+        -webkit-border-radius: 5px !important;
+        -moz-border-radius: 5px !important;
+        -ms-border-radius: 5px !important;
+        -o-border-radius: 5px !important;
+        -webkit-transition: all 150ms ease-in-out;
+        -moz-transition: all 150ms ease-in-out;
+        -ms-transition: all 150ms ease-in-out;
+        -o-transition: all 150ms ease-in-out;
+    }
+
 }
 
 @theme {

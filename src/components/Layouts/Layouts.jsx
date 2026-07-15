@@ -6,7 +6,7 @@ export default function Layouts() {
   return (
     <>
       <Header />
-      <main className="flex-1 relative">
+      <main className="flex-1 relative py-12">
         <Outlet />
       </main>
     </>

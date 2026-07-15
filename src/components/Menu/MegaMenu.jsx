@@ -1,5 +1,5 @@
 import React from "react";
-import MegaBox from "./component/MegaBox";
+import MegaBox from "./components/MegaBox";
 
 export default function MegaMenu() {
   const banners = [
