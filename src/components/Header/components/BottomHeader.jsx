@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router";
+import MegaMenu from "../../Menu/MegaMenu";
 
-export default function BottomHeader({ menu }) {
-    const [inCart, setInCart] = useState(0);
+export default function BottomHeader({ menu, isMegaOpen, setIsMegaOpen }) {
+  const [inCart, setInCart] = useState(0);
+
   return (
     <div className="flex items-center justify-between">
       <div className="flex items-center gap-5">
-        <div>
+        <div
+          className="relative"
+          onMouseEnter={() => setIsMegaOpen(true)}
+          onMouseLeave={() => setIsMegaOpen(false)}
+        >
           <h4 className="flex items-center gap-1.5 text-black font-semibold border-l border-l-Caption pl-5 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
