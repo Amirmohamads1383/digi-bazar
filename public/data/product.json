@@ -1,0 +1,345 @@
+[
+    {
+        "id": 2,
+        "title": "لپ تاپ ایسوس مدل VivoBook 15 X1504VA",
+        "price": 32990000,
+        "category": "laptop",
+        "categorypersian": "لپ تاپ",
+        "image": "/images/product/laptop-1.webp",
+        "gallery": [],
+        "specs": {
+            "processor": "Intel Core i7",
+            "ram": "16GB",
+            "storage": "512GB SSD"
+        },
+        "discountPercent": 15,
+        "sale": true,
+        "amazing": false,
+        "rate": 4,
+        "brand": "ASUS"
+    },
+    {
+        "id": 3,
+        "title": "لپ تاپ لنوو مدل Ideapad Gaming 3",
+        "price": 41900000,
+        "category": "laptop",
+        "categorypersian": "لپ تاپ",
+        "image": "/images/product/laptop-2.webp",
+        "gallery": [],
+        "specs": {
+            "processor": "AMD Ryzen 7",
+            "ram": "32GB",
+            "storage": "1TB SSD"
+        },
+        "discountPercent": 20,
+        "sale": false,
+        "amazing": false,
+        "rate": 3,
+        "brand": "Lenovo"
+    },
+    {
+        "id": 4,
+        "title": "گوشی موبایل سامسونگ مدل Galaxy S24 Ultra",
+        "price": 59900000,
+        "category": "mobile",
+        "categorypersian": "موبایل",
+        "image": "/images/product/mobile-1.webp",
+        "gallery": [],
+        "colors": [
+            "black",
+            "gray",
+            "violet"
+        ],
+        "discountPercent": 0,
+        "sale": true,
+        "amazing": true,
+        "rate": 5,
+        "brand": "Samsung"
+    },
+    {
+        "id": 5,
+        "title": "لپ تاپ اپل مک‌بوک پرو 16 اینچ",
+        "price": 84900000,
+        "category": "laptop",
+        "categorypersian": "لپ تاپ",
+        "image": "/images/product/laptop-3.webp",
+        "gallery": [],
+        "specs": {
+            "processor": "Apple M3 Pro",
+            "ram": "18GB",
+            "storage": "512GB SSD"
+        },
+        "discountPercent": 0,
+        "sale": true,
+        "amazing": false,
+        "rate": 5,
+        "brand": "Apple"
+    },
+    {
+        "id": 6,
+        "title": "هدفون بی‌سیم اپل ایرپادز مکس",
+        "price": 12900000,
+        "category": "headphone",
+        "categorypersian": "هدفون",
+        "image": "/images/product/headphone-1.webp",
+        "gallery": [],
+        "colors": [
+            "black",
+            "silver"
+        ],
+        "discountPercent": 0,
+        "sale": false,
+        "amazing": false,
+        "rate": 4,
+        "brand": "Apple"
+    },
+    {
+        "id": 7,
+        "title": "کارت گرافیک انویدیا GeForce RTX 4090",
+        "price": 75000000,
+        "category": "pc-parts",
+        "categorypersian": "قطعات کامپیوتر",
+        "image": "/images/product/gpu-1.webp",
+        "gallery": [],
+        "brand": "NVIDIA",
+        "discountPercent": 5,
+        "sale": true,
+        "amazing": false,
+        "rate": 5
+    },
+    {
+        "id": 8,
+        "title": "لپ تاپ مایکروسافت سرفیس پرو 9",
+        "price": 62900000,
+        "category": "laptop",
+        "categorypersian": "لپ تاپ",
+        "image": "/images/product/laptop-4.webp",
+        "gallery": [],
+        "specs": {
+            "processor": "Intel Core i5",
+            "ram": "16GB",
+            "storage": "256GB SSD"
+        },
+        "discountPercent": 18,
+        "sale": true,
+        "amazing": false,
+        "rate": 4,
+        "brand": "Microsoft"
+    },
+    {
+        "id": 9,
+        "title": "مانیتور گیمینگ سامسونگ 27 اینچ",
+        "price": 12500000,
+        "category": "pc-parts",
+        "categorypersian": "قطعات کامپیوتر",
+        "image": "/images/product/monitor-1.webp",
+        "gallery": [],
+        "brand": "Samsung",
+        "discountPercent": 22,
+        "sale": true,
+        "amazing": true,
+        "rate": 4
+    },
+    {
+        "id": 10,
+        "title": "لپ تاپ دل اینسپایرون 15",
+        "price": 27900000,
+        "category": "laptop",
+        "categorypersian": "لپ تاپ",
+        "image": "/images/product/laptop-5.webp",
+        "gallery": [
+            "../assets/images/product/laptop-5-1.jpg",
+            "../assets/images/product/laptop-6.webp",
+            "../assets/images/product/laptop-7.webp",
+            "../assets/images/product/laptop-4.webp"
+        ],
+        "specs": {
+            "processor": "Intel Core i5",
+            "ram": "8GB",
+            "storage": "512GB SSD"
+        },
+        "discountPercent": 25,
+        "sale": false,
+        "amazing": false,
+        "rate": 3,
+        "brand": "Dell"
+    },
+    {
+        "id": 11,
+        "title": "گوشی موبایل شیائومی مدل Redmi Note 13 Pro",
+        "price": 14900000,
+        "category": "mobile",
+        "categorypersian": "موبایل",
+        "image": "/images/product/mobile-2.webp",
+        "gallery": [],
+        "colors": [
+            "blue",
+            "white",
+            "black"
+        ],
+        "discountPercent": 17,
+        "sale": true,
+        "amazing": false,
+        "rate": 4,
+        "brand": "Xiaomi"
+    },
+    {
+        "id": 12,
+        "title": "رم کامپیوتر کینگستون 32GB DDR5",
+        "price": 4500000,
+        "category": "pc-parts",
+        "categorypersian": "قطعات کامپیوتر",
+        "image": "/images/product/ram-1.webp",
+        "gallery": [],
+        "brand": "Kingston",
+        "discountPercent": 14,
+        "sale": true,
+        "amazing": false,
+        "rate": 4
+    },
+    {
+        "id": 13,
+        "title": "لپ تاپ ایسر مدل Swift 3",
+        "price": 36900000,
+        "category": "laptop",
+        "categorypersian": "لپ تاپ",
+        "image": "/images/product/laptop-6.webp",
+        "gallery": [],
+        "specs": {
+            "processor": "Intel Core i7",
+            "ram": "16GB",
+            "storage": "1TB SSD"
+        },
+        "discountPercent": 11,
+        "sale": true,
+        "amazing": false,
+        "rate": 3,
+        "brand": "Acer"
+    },
+    {
+        "id": 14,
+        "title": "هدفون گیمینگ رزر مدل Kraken",
+        "price": 6500000,
+        "category": "headphone",
+        "categorypersian": "هدفون",
+        "image": "/images/product/headphone-2.webp",
+        "gallery": [],
+        "colors": [
+            "green",
+            "black"
+        ],
+        "discountPercent": 28,
+        "sale": true,
+        "amazing": false,
+        "rate": 4,
+        "brand": "Razer"
+    },
+    {
+        "id": 15,
+        "title": "لپ تاپ اچ پی مدل Pavilion 15",
+        "price": 29900000,
+        "category": "laptop",
+        "categorypersian": "لپ تاپ",
+        "image": "/images/product/laptop-7.webp",
+        "gallery": [],
+        "specs": {
+            "processor": "AMD Ryzen 5",
+            "ram": "8GB",
+            "storage": "512GB SSD"
+        },
+        "discountPercent": 19,
+        "sale": false,
+        "amazing": false,
+        "rate": 3,
+        "brand": "HP"
+    },
+    {
+        "id": 16,
+        "title": "مادربرد ایسوس ROG Strix Z790",
+        "price": 18500000,
+        "category": "pc-parts",
+        "categorypersian": "قطعات کامپیوتر",
+        "image": "/images/product/motherboard-1.webp",
+        "gallery": [],
+        "brand": "ASUS",
+        "discountPercent": 9,
+        "sale": true,
+        "amazing": true,
+        "rate": 4
+    },
+    {
+        "id": 17,
+        "title": "لپ تاپ گیمینگ ام‌اس آی مدل Katana 17",
+        "price": 58900000,
+        "category": "laptop",
+        "categorypersian": "لپ تاپ",
+        "image": "/images/product/laptop-8.webp",
+        "gallery": [],
+        "specs": {
+            "processor": "Intel Core i9",
+            "ram": "32GB",
+            "storage": "2TB SSD"
+        },
+        "discountPercent": 13,
+        "sale": true,
+        "amazing": false,
+        "rate": 4,
+        "brand": "MSI"
+    },
+    {
+        "id": 18,
+        "title": "گوشی موبایل اپل آیفون 15 پرو مکس",
+        "price": 79900000,
+        "category": "mobile",
+        "categorypersian": "موبایل",
+        "image": "/images/product/mobile-3.webp",
+        "gallery": [],
+        "colors": [
+            "black",
+            "white",
+            "blue"
+        ],
+        "discountPercent": 7,
+        "sale": true,
+        "amazing": false,
+        "rate": 5,
+        "brand": "Apple"
+    },
+    {
+        "id": 19,
+        "title": "هدفون سونی مدل WH-1000XM5",
+        "price": 15900000,
+        "category": "headphone",
+        "categorypersian": "هدفون",
+        "image": "/images/product/headphone-3.webp",
+        "gallery": [],
+        "colors": [
+            "black",
+            "silver"
+        ],
+        "discountPercent": 16,
+        "sale": false,
+        "amazing": false,
+        "rate": 5,
+        "brand": "Sony"
+    },
+    {
+        "id": 20,
+        "title": "لپ تاپ گوگل پیکسل بوک",
+        "price": 47900000,
+        "category": "laptop",
+        "categorypersian": "لپ تاپ",
+        "image": "/images/product/laptop-9.webp",
+        "gallery": [],
+        "specs": {
+            "processor": "Google Tensor",
+            "ram": "16GB",
+            "storage": "512GB SSD"
+        },
+        "discountPercent": 21,
+        "sale": true,
+        "amazing": false,
+        "rate": 4,
+        "brand": "Google"
+    }
+]

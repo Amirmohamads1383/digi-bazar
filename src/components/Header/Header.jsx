@@ -12,15 +12,15 @@ export default function Header() {
     },
     {
       title: " سبد های گوشی",
-      path: "/price-list",
+      path: "/price",
     },
     {
       title: " قیمت عمده",
-      path: "/price-list",
+      path: "/priist",
     },
     {
       title: " درخواست پنل همکار",
-      path: "/price-list",
+      path: "/pri",
     },
   ];
   return (

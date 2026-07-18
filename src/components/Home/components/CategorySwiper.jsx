@@ -21,8 +21,8 @@ export default function CategorySwiper() {
 
   return (
     <>
-      <div className="flex items-center justify-center gap-6 w-full">
-        <button 
+      <div className="flex items-center justify-center gap-8 w-full">
+        <button
           className="p-2 bg-white text-Title hover:text-Primary rounded-lg cursor-pointer"
           onClick={() => swiperRef.current?.slidePrev()} // 👈 کنترل قبلی
         >
@@ -42,24 +42,24 @@ export default function CategorySwiper() {
             />
           </svg>
         </button>
-        
+
         <Swiper
           slidesPerView={5}
-          spaceBetween={24}
+          spaceBetween={32}
           modules={[Navigation]}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           className="relative w-full"
           id="cat-swiper"
         >
-          {category.map((cat) => (
+          {category.slice(0, 8).map((cat) => (
             <SwiperSlide key={cat.id}>
               <CategoryBox title={cat.name.fa} img={cat.image} />
             </SwiperSlide>
           ))}
         </Swiper>
-        
-        <button 
-          className="p-3 bg-white text-Title hover:text-Primary rounded-lg cursor-pointer"
+
+        <button
+          className="p-2 bg-white text-Title hover:text-Primary rounded-lg cursor-pointer"
           onClick={() => swiperRef.current?.slideNext()}
         >
           <svg
