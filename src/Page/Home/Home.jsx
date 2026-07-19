@@ -6,6 +6,7 @@ import Suggestion from "../../components/Home/Suggestion";
 import BestSelling from "../../components/Home/BestSelling";
 import Banners from "../../components/Home/Banners";
 import Article from "../../components/Home/Article";
+import Brands from "../../components/Home/Brands";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <BestSelling />
       <Banners />
       <Article />
+      <Brands />
     </>
   );
 }
