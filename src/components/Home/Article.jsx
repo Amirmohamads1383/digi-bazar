@@ -19,7 +19,7 @@ export default function Article() {
   }, []);
 
   return (
-    <section>
+    <section className="pt-20">
       <div className="container">
         <TitleHeader title={"جدیدترین مقالات"} />
         <Swiper

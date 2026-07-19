@@ -16,9 +16,10 @@ export default function Home() {
       <Offers />
       <Suggestion />
       <BestSelling />
-      <Banners />
+      <Banners img1={"/images/banner/banner-1.webp"} img2={"/images/banner/banner-2.webp"}/>
       <Article />
       <Brands />
+      <Banners img1={"/images/banner/banner-3.webp"} img2={"/images/banner/banner-4.webp"}/>
     </>
   );
 }

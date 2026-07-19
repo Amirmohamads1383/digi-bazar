@@ -14,7 +14,7 @@ export default function BestSelling() {
     fetchData();
   }, []);
   return (
-    <section>
+    <section className="pb-20">
       <div className="container">
         <TitleHeader title={"محصولات پرفروش"} />
         <Swiper
