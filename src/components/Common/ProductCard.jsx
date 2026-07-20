@@ -1,13 +1,16 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function ProductCard({ product }) {
   return (
     <div className="relative px-2 py-3 bg-white rounded-lg">
-      <img src={product.image} alt="" className="w-64 mx-auto object-cover" />
+      <img src={product.images[0]} alt="" className="w-64 mx-auto object-cover" />
       <div className="flex flex-col gap-4">
-        <h2 className="text-base text-Title font-semibold line-clamp-1">
-          {product.title}
-        </h2>
+        <Link to={`/product/${product.id}`}>
+          <h2 className="text-base text-Title font-semibold line-clamp-1">
+            {product.title}
+          </h2>
+        </Link>
         <div className="flex items-center justify-between">
           <button className="bg-[#FEF6EF] text-Primary p-2 rounded-md cursor-pointer">
             <svg
