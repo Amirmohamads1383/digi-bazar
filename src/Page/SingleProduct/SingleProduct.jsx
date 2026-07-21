@@ -45,8 +45,8 @@ export default function SingleProduct() {
 
   return (
     <>
-    <Breadcrumb />
-    <ProductHero product={product}/>
+      <Breadcrumb />
+      <ProductHero product={product} />
     </>
   );
 }
