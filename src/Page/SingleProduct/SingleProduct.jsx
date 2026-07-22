@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Breadcrumb from "../../components/Common/Breadcrumb";
 import ProductHero from "../../components/SingleProduct/ProductHero";
+import ProductContent from "../../components/SingleProduct/ProductContent";
 
 export default function SingleProduct() {
   const { id } = useParams();
@@ -47,6 +48,7 @@ export default function SingleProduct() {
     <>
       <Breadcrumb />
       <ProductHero product={product} />
+      <ProductContent product={product}/>
     </>
   );
 }

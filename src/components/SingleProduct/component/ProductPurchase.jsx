@@ -16,7 +16,7 @@ export default function ProductPurchase({ product }) {
   };
 
   return (
-    <div className="flex flex-col gap-3 p-6 w-1/4 bg-white rounded-lg">
+    <div className="flex flex-col gap-3 sticky top-1 p-6 w-1/4 bg-white rounded-lg">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4">
           {hasDiscount ? (
