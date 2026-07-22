@@ -1,18 +1,31 @@
 import React, { useState } from "react";
 
-export default function ProductTabs({product}) {
+export default function ProductTabs({ product }) {
   const [activeTab, setActiveTab] = useState(1);
 
   const tabs = [
     {
       id: 1,
       label: "توضیحات محصول",
-      content: <div className="mt-6 font-medium text-base/relaxed text-Title">{product.description}</div>,
+      content: (
+        <div className="mt-6 font-medium text-base/relaxed text-Title">
+          {product.description}
+        </div>
+      ),
     },
     {
       id: 2,
       label: "مشخصات فنی",
-      content: <div className="mt-6"></div>,
+      content: (
+        <ul className="mt-6 flex flex-col gap-4">
+          {product.specs.map((spec) => (
+            <li className="flex *:text-Title">
+              <span className="font-bold w-1/4">{spec.title} :</span>
+              <span className="">{spec.value}</span>
+            </li>
+          ))}
+        </ul>
+      ),
     },
     {
       id: 3,

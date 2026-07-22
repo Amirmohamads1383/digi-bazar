@@ -19,7 +19,7 @@ export default function ProductContent({product}) {
   }, []);
 
   return (
-    <section>
+    <section className="single-product-content">
       <div className="container flex flex-col lg:flex-row gap-6">
         <ProductTabs product={product}/>
         <aside className="w-1/2 flex flex-col gap-4 shrink-0">

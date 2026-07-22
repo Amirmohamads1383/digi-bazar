@@ -18,7 +18,6 @@
         margin: 0 auto !important;
     }
 
-
     .ss02 {
         -moz-font-feature-settings: "ss02";
         -webkit-font-feature-settings: "ss02";
@@ -46,6 +45,18 @@
         -o-transition: all 150ms ease-in-out;
     }
 
+    .single-product-content .product-card img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .single-product-content .product-card h2 {
+        font-size: 14px !important;
+    }
+
+    .single-product-content .product-card .price {
+        font-size: 16px !important;
+    }
 }
 
 @theme {

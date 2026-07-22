@@ -1,10 +1,16 @@
-import React from "react";
 import { Link } from "react-router";
+import { useCart } from "../../context/CartContext";
+import { toast } from "sonner";
 
 export default function ProductCard({ product }) {
+  const { addToCart } = useCart();
   return (
-    <div className="relative px-2 py-3 bg-white rounded-lg">
-      <img src={product.images[0]} alt="" className="w-64 mx-auto object-cover" />
+    <div className="product-card relative px-2 py-3 bg-white rounded-lg">
+      <img
+        src={product.images[0]}
+        alt=""
+        className="w-64 mx-auto object-cover"
+      />
       <div className="flex flex-col gap-4">
         <Link to={`/product/${product.id}`}>
           <h2 className="text-base text-Title font-semibold line-clamp-1">
@@ -12,7 +18,13 @@ export default function ProductCard({ product }) {
           </h2>
         </Link>
         <div className="flex items-center justify-between">
-          <button className="bg-[#FEF6EF] text-Primary p-2 rounded-md cursor-pointer">
+          <button
+            className="bg-[#FEF6EF] text-Primary p-2 rounded-md cursor-pointer"
+            onClick={() => {
+              addToCart(product, 1);
+              toast.success("محصول به سبد خرید اضافه شد");
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}
@@ -44,7 +56,7 @@ export default function ProductCard({ product }) {
                   {product.discountPercent}%
                 </span>
               </div>
-              <span className="font-semibold text-xl text-Title">
+              <span className="price font-semibold text-xl text-Title">
                 {(
                   product.price -
                   (product.price / 100) * product.discountPercent
@@ -52,7 +64,7 @@ export default function ProductCard({ product }) {
               </span>
             </div>
           ) : (
-            <span className="font-semibold text-xl text-Title">
+            <span className="price font-semibold text-xl text-Title">
               {product.price.toLocaleString()} تومان
             </span>
           )}

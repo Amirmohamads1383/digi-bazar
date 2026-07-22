@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { toast } from "sonner";
+import { useCart } from "../../../context/CartContext";
 
 export default function ProductPurchase({ product }) {
+  const { addToCart } = useCart();
   const [count, setCount] = useState(1);
   const hasDiscount = product.discountPercent > 0;
   const finalPrice = hasDiscount
@@ -12,7 +15,21 @@ export default function ProductPurchase({ product }) {
   };
 
   const decreaseCount = () => {
-    setCount(count - 1);
+    if (count > 1) {
+      setCount(count - 1);
+    } else {
+      toast.warning("تعداد نمی‌تواند کمتر از ۱ باشد");
+    }
+  };
+
+  const addToCartBtn = () => {
+    addToCart(product, count);
+    
+    toast.success("محصول به سبد خرید اضافه شد");
+  };
+
+  const addToFavourite = () => {
+    toast.success("محصول به علاقه مندی ها اضافه شد");
   };
 
   return (
@@ -39,13 +56,10 @@ export default function ProductPurchase({ product }) {
             </>
           ) : (
             <>
-              <span className="text-Caption">قیمت محصول</span>
-
-              <span className="text-2xl font-bold text-Title">
-                {product.price.toLocaleString()}
+              <span className="font-bold text-lg text-Title">قیمت محصول</span>
+              <span className="text-xl font-bold text-left text-Primary">
+                {product.price.toLocaleString()} تومان
               </span>
-
-              <span className="text-sm text-Caption">تومان</span>
             </>
           )}
         </div>
@@ -66,7 +80,10 @@ export default function ProductPurchase({ product }) {
             -
           </button>
         </div>
-        <button className="w-full flex items-center justify-center gap-2 py-3 font-medium text-white hover:text-Primary bg-Primary hover:bg-white rounded-lg cursor-pointer transition-all">
+        <button
+          className="w-full flex items-center justify-center gap-2 py-3 font-medium text-white hover:text-Primary bg-Primary hover:bg-white rounded-lg cursor-pointer transition-all"
+          onClick={() => addToCartBtn()}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width={24}
@@ -84,7 +101,10 @@ export default function ProductPurchase({ product }) {
           </svg>
           افزودن به سبد خرید
         </button>
-        <button className="w-full flex items-center justify-center gap-2 py-3 font-medium text-Title border border-Caption/15 rounded-lg cursor-pointer">
+        <button
+          className="w-full flex items-center justify-center gap-2 py-3 font-medium text-Title border border-Caption/15 rounded-lg cursor-pointer"
+          onClick={() => addToFavourite()}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width={24}

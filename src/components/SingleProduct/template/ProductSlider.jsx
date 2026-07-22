@@ -29,7 +29,7 @@ export default function ProductSlider({ title, products }) {
           </span>
         </button>
       </div>
-      <Swiper spaceBetween={16} slidesPerView={4} className="w-full">
+      <Swiper spaceBetween={16} slidesPerView={3} className="w-full">
         {products.map((product) => (
           <SwiperSlide key={product.id}>
             <ProductCard product={product} />
