@@ -57,6 +57,10 @@
     .single-product-content .product-card .price {
         font-size: 16px !important;
     }
+
+    .mini-cart-products:last-child {
+        border: 0 !important;
+    }
 }
 
 @theme {

@@ -75,7 +75,7 @@ export default function BottomHeader({ menu, setIsMegaOpen }) {
             </span>
           </button>
           <div
-            className={`absolute left-0 top-full mt-3 transition-all duration-300 z-100 ${
+            className={`absolute left-0 top-full mt-3 transition-all duration-300 z-100 border border-Caption/10 rounded-lg after:absolute after:w-full after:h-10 after:-top-6 ${
               showCart ? "visible opacity-100" : "invisible opacity-0"
             }`}
           >

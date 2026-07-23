@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import { toast } from "sonner";
 
 const CartContext = createContext();
 
@@ -49,6 +50,7 @@ export function CartProvider({ children }) {
 
   const removeFromCart = (id) => {
     setCartItems((prev) => prev.filter((item) => item.id !== id));
+    toast.warning("محصول از سبد خرید حذف شد")
   };
 
   const increaseQuantity = (id) => {
