@@ -5,6 +5,23 @@ const CartContext = createContext();
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
 
+  const getFinalPrice = (product) => {
+    if (product.discountPercent && product.discountPercent > 0) {
+      return product.price - (product.price * product.discountPercent) / 100;
+    }
+    return product.price;
+  };
+
+  const getTotalPrice = (product) => {
+    return getFinalPrice(product) * product.quantity;
+  };
+
+  const getCartTotal = () => {
+    return cartItems.reduce((total, item) => {
+      return total + getTotalPrice(item);
+    }, 0);
+  };
+
   const addToCart = (product, quantity = 1) => {
     setCartItems((prev) => {
       const exist = prev.find((item) => item.id === product.id);
@@ -70,6 +87,9 @@ export function CartProvider({ children }) {
         removeFromCart,
         increaseQuantity,
         decreaseQuantity,
+        getFinalPrice,
+        getTotalPrice,
+        getCartTotal,
       }}
     >
       {children}
