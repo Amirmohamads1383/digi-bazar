@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function Header() {
   const [isMegaOpen, setIsMegaOpen] = useState(false);
+
   const menu = [
     {
       title: "صفحه اصلی",
@@ -23,6 +24,7 @@ export default function Header() {
       path: "/pri",
     },
   ];
+
   return (
     <>
       <header className="py-7 bg-white shadow-lg">
@@ -33,7 +35,6 @@ export default function Header() {
             isMegaOpen={isMegaOpen}
             setIsMegaOpen={setIsMegaOpen}
           />
-          {isMegaOpen == true ? <MegaMenu isMegaOpen={isMegaOpen} /> : ""}
         </div>
       </header>
     </>

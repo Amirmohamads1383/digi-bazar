@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router";
 import MiniCart from "./MiniCart";
 import { useCart } from "../../../context/CartContext";
+import MegaMenu from "../../Menu/MegaMenu";
 
-export default function BottomHeader({ menu, setIsMegaOpen }) {
+export default function BottomHeader({ menu, setIsMegaOpen, isMegaOpen }) {
   const { cartItems } = useCart();
   const [showCart, setShowCart] = useState(false);
 
@@ -32,6 +33,13 @@ export default function BottomHeader({ menu, setIsMegaOpen }) {
             </svg>
             دسته بندی ها
           </h4>
+          <div
+            className={`absolute right-0 top-full w-300 mt-3 transition-all duration-300 z-100 border border-Caption/10 rounded-lg after:absolute after:w-full after:h-10 after:-top-6 ${
+              isMegaOpen ? "visible opacity-100" : "invisible opacity-0"
+            }`}
+          >
+            <MegaMenu />
+          </div>
         </div>
         <div className="flex items-center gap-6">
           {menu.map((item) => (
